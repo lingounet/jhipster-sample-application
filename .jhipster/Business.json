@@ -1,0 +1,43 @@
+{
+  "name": "Business",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "person",
+      "otherEntityRelationshipName": "business",
+      "relationshipName": "person"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "demand",
+      "otherEntityRelationshipName": "business",
+      "relationshipName": "demand"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "licence",
+      "otherEntityRelationshipName": "business",
+      "relationshipName": "licence"
+    }
+  ],
+  "entityTableName": "business",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210405211137"
+}

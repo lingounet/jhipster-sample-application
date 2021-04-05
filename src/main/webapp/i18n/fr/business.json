@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "business": {
+      "home": {
+        "title": "Businesses",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Business",
+        "createOrEditLabel": "Créer ou éditer un Business",
+        "notFound": "Aucun Business trouvé"
+      },
+      "created": "Un nouveau Business a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Business avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Business avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Business {{ id }} ?"
+      },
+      "detail": {
+        "title": "Business"
+      },
+      "id": "ID",
+      "code": "Code",
+      "name": "Name",
+      "person": "Person",
+      "demand": "Demand",
+      "licence": "Licence"
+    }
+  }
+}

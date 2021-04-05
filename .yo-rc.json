@@ -42,7 +42,9 @@
     "jwtSecretKey": "NTYyZjY1OWJmY2U3NzE0YmIyODQ1MjZkOWI3NGIxYmZkY2Q3NWFiMmQzM2I3ZGJlNWMwMzU2MmQyYzIyYTc5MTg5NDdiZmZiNTZhMjZiMmMxNDk3OTFlOTczYTQ1MDZmOTZiZmMzNzc5YTc1YjUxMTg0NmQ1N2JkYzdhMDFjMmQ=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Business", "Person", "Role", "Licence", "Demand"],
+    "lastLiquibaseTimestamp": 1617657101000
   },
   "git-provider": "GitHub",
   "git-company": "lingounet",

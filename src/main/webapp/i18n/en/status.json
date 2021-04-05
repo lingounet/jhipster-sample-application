@@ -1,0 +1,11 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "Status": {
+      "null": "",
+      "DRAFT": "DRAFT",
+      "IN_PROGRESS": "IN_PROGRESS",
+      "DELIVERED": "DELIVERED",
+      "DONE": "DONE"
+    }
+  }
+}

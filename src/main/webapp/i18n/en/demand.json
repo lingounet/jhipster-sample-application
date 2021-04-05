@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "demand": {
+      "home": {
+        "title": "Demands",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Demand",
+        "createOrEditLabel": "Create or edit a Demand",
+        "notFound": "No Demands found"
+      },
+      "created": "A new Demand is created with identifier {{ param }}",
+      "updated": "A Demand is updated with identifier {{ param }}",
+      "deleted": "A Demand is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Demand {{ id }}?"
+      },
+      "detail": {
+        "title": "Demand"
+      },
+      "id": "ID",
+      "status": "Status",
+      "email": "Email",
+      "number": "Number",
+      "licence": "Licence",
+      "business": "Business"
+    }
+  }
+}
