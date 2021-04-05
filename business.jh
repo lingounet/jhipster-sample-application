@@ -1,0 +1,43 @@
+
+entity Business {
+	code String
+    name String
+}
+
+entity Person {
+	sgid String
+}
+
+entity Role {
+	name String
+}
+
+entity Licence {
+	id String
+    price Double
+    reference String
+}
+
+entity Demand {
+	status Status
+    email String
+    number Integer
+}
+
+enum Status {
+	DRAFT,
+	IN_PROGRESS,
+    DELIVERED,
+    DONE
+}
+
+relationship OneToMany {
+	Business to Person
+    Business to Demand
+    Demand to Licence
+    Person to Role
+}
+
+relationship ManyToOne {
+	Business to Licence
+}
