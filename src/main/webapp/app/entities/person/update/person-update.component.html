@@ -1,0 +1,58 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-person-heading"
+        data-cy="PersonCreateUpdateHeading"
+        jhiTranslate="jhipsterSampleApplicationApp.person.home.createOrEditLabel"
+      >
+        Create or edit a Person
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="form-group" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-control-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.person.sgid" for="field_sgid">Sgid</label>
+          <input type="text" class="form-control" name="sgid" id="field_sgid" data-cy="sgid" formControlName="sgid" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.person.business" for="field_business"
+            >Business</label
+          >
+          <select class="form-control" id="field_business" data-cy="business" name="business" formControlName="business">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="businessOption.id === editForm.get('business')!.value?.id ? editForm.get('business')!.value : businessOption"
+              *ngFor="let businessOption of businessesSharedCollection; trackBy: trackBusinessById"
+            >
+              {{ businessOption.id }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
